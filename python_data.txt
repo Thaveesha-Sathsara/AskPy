@@ -1,0 +1,306 @@
+What is Python?
+Python is a high-level, interpreted programming language known for its readability.
+How do you define a function in Python?
+Use the def keyword followed by a function name and parentheses.
+What is a variable in Python?
+A variable stores a value that can change during program execution.
+What is a list in Python?
+A list is an ordered, mutable collection of elements enclosed in square brackets.
+What is a dictionary in Python?
+A dictionary is a key-value pair data structure enclosed in curly braces.
+What is a tuple in Python?
+A tuple is an immutable, ordered sequence of items enclosed in parentheses.
+What is a set in Python?
+A set is an unordered collection of unique items.
+What is a class in Python?
+A class is a user-defined blueprint for creating objects.
+What is inheritance in Python?
+Inheritance allows a class to acquire properties of another class.
+What is the use of the with statement?
+The with statement is used for resource management and exception handling.
+What is a lambda function?
+A lambda function is a small anonymous function defined using the lambda keyword.
+What are *args and **kwargs?
+*args allows variable positional arguments, **kwargs allows variable keyword arguments.
+How to open a file in Python?
+Use open('filename', 'r') for reading, open('filename', 'w') for writing.
+How to handle exceptions in Python?
+Use try and except blocks to catch and handle exceptions.
+What is recursion in Python?
+Recursion is a function calling itself to solve a problem.
+What is a decorator?
+A decorator modifies the behavior of a function without changing its code.
+How to import a module?
+Use the import statement, e.g., import math.
+What is __init__ in Python?
+__init__ is the constructor method used in Python classes.
+What is the difference between is and ==?
+'is' checks identity, '==' checks equality.
+How to reverse a string?
+Use slicing like string[::-1].
+How to remove duplicates from a list?
+Convert the list to a set and back to a list.
+How to check data type of a variable?
+Use the type() function.
+What is range() used for?
+range() generates a sequence of numbers for iteration.
+How to iterate through a list?
+Use a for loop like for item in list.
+How to check if a key exists in a dictionary?
+Use 'key in dict'.
+How to create a virtual environment?
+Use python -m venv env_name.
+How to install a package?
+Use pip install package_name.
+What is __name__ == '__main__' used for?
+It ensures code runs only when the script is executed directly.
+How to sort a list?
+Use sorted(list) or list.sort().
+What is list comprehension?
+It's a concise way to create lists using a single line of code.
+What is map() in Python?
+map() applies a function to all items in an iterable.
+What is filter() in Python?
+filter() filters elements in an iterable using a condition.
+How to comment code?
+Use # for single-line and triple quotes for multi-line comments.
+What is a module?
+A module is a Python file containing functions and variables.
+What is a package?
+A package is a directory of Python modules with an __init__.py file.
+Difference between module and package?
+A module is a .py file, a package is a directory of modules.
+How to convert string to int?
+Use int(string).
+How to convert int to string?
+Use str(integer).
+How to get length of a list?
+Use len(list).
+How to check if element exists in a list?
+Use 'element in list'.
+What is a while loop?
+A loop that continues while its condition is True.
+What is break used for?
+break exits the loop early.
+What is continue used for?
+continue skips the rest of the current loop iteration.
+What are Python keywords?
+Keywords are reserved words that cannot be used as identifiers.
+What are Python data types?
+Common types include int, float, str, bool, list, tuple, dict, and set.
+How to convert list to string?
+Use ', '.join(list).
+How to convert string to list?
+Use list(string) or string.split().
+How to add to a list?
+Use list.append(item).
+How to remove from a list?
+Use list.remove(item) or list.pop().
+What is duck typing in Python?
+Duck typing means Python cares about behavior (methods/attributes) rather than actual object type.
+What is the GIL in Python?
+The Global Interpreter Lock prevents multiple native threads from executing Python bytecodes at once.
+How to use a generator in Python?
+Use yield inside a function to return a generator object you can iterate over.
+What is the difference between a shallow copy and a deep copy?
+A shallow copy copies references; a deep copy duplicates all objects recursively.
+How can you make a Python script executable on Unix?
+Add #!/usr/bin/env python3 at the top and use chmod +x filename.py.
+What is the purpose of __slots__?
+__slots__ is used to reduce memory overhead by restricting attribute creation.
+How to check memory usage of objects in Python?
+Use the sys.getsizeof() function.
+What is the difference between isinstance() and type()?
+isinstance() checks type inheritance; type() checks exact match.
+How to profile performance in Python?
+Use cProfile module to analyze function call timings.
+How does Python's asyncio work?
+asyncio allows concurrent code using the async/await syntax for non-blocking I/O.
+What are Python metaclasses?
+Metaclasses are classes of classes that define how classes behave.
+How can you prevent a class from being subclassed in Python?
+Use __init_subclass__ or raise TypeError in the constructor.
+What is monkey patching in Python?
+Monkey patching means dynamically modifying a class or module at runtime.
+What is the difference between @staticmethod and @classmethod?
+@staticmethod doesn't take class or instance, @classmethod takes class as the first argument.
+What is the purpose of the pass statement?
+pass is a no-op placeholder used when a statement is syntactically required.
+How to merge two dictionaries in Python 3.9+?
+Use the merge operator: dict1 | dict2.
+What does the del keyword do?
+It deletes objects or variables from memory.
+What is the purpose of the globals() function?
+globals() returns a dictionary of the current global symbol table.
+How to find all subclasses of a class?
+Use __subclasses__() on the class object.
+How do you serialize a Python object?
+Use the pickle or json module.
+How to safely evaluate a string as code?
+Use ast.literal_eval() instead of eval().
+What is a context manager?
+A context manager is an object that defines __enter__ and __exit__, used with with.
+How to copy a dictionary without affecting the original?
+Use dict.copy() or copy.deepcopy().
+What is the difference between not, !=, and is not?
+not is logical, != is inequality, is not checks object identity.
+What is a coroutine in Python?
+A coroutine is a function defined with async def that can be paused and resumed.
+How to measure execution time of a function?
+Use time.time(), time.perf_counter(), or timeit module.
+What is the use of nonlocal keyword?
+It allows modifying a variable in the nearest enclosing scope that's not global.
+What’s the difference between __str__ and __repr__?
+__str__ is user-friendly, __repr__ is for developers and debugging.
+How to define a private method or variable?
+Prefix it with an underscore _ or double underscore __.
+What is the purpose of enumerate()?
+enumerate() returns index-value pairs during iteration.
+How to flatten a list of lists?
+Use list comprehension: [item for sublist in lists for item in sublist].
+What is the difference between mutable and immutable types?
+Mutable types can change (like lists), immutable types can’t (like tuples).
+How to slice a list in reverse?
+Use list[::-1].
+What is the use of any() and all()?
+any() returns True if any element is true, all() returns True if all elements are true.
+What is a sentinel value?
+A sentinel value is a special value used to control the flow of a loop or function.
+How to unpack values from a list or tuple?
+Use a, b, c = my_list.
+What does ** do in Python function parameters?
+**kwargs collects extra named arguments as a dictionary.
+How to implement a switch-case in Python?
+Use dictionaries or match-case in Python 3.10+.
+What are Python descriptors?
+Descriptors are objects that define __get__, __set__, or __delete__ methods to manage attribute access.
+What’s the difference between deepcopy() and assignment?
+Assignment creates a reference; deepcopy() creates a new object recursively.
+How to force garbage collection?
+Use gc.collect() after importing the gc module.
+What is a memoryview in Python?
+It provides a view object over the memory of another object, usually for binary data.
+What are f-strings?
+F-strings are formatted string literals introduced in Python 3.6 using f"text {variable}".
+How to annotate types in Python?
+Use type hints: def func(x: int) -> str.
+What is the walrus operator?
+The := operator assigns values within expressions (introduced in Python 3.8).
+How to use a namedtuple?
+Import from collections and use namedtuple('Name', ['field1', 'field2']).
+How to remove whitespaces from a string?
+Use str.strip(), str.lstrip(), or str.rstrip().
+How to generate random numbers?
+Use the random module: random.randint(), random.random().
+How to round a float to 2 decimal places?
+Use round(number, 2).
+How to convert a list of strings to integers in Python?
+Use list comprehension: [int(x) for x in string_list].
+What does zip() do in Python?
+It aggregates elements from multiple iterables into tuples.
+What is the purpose of the repr() function?
+repr() returns a string that would recreate the object if passed to eval().
+What is the purpose of dir() in Python?
+dir() lists the attributes and methods of an object.
+What is slicing in Python?
+Slicing extracts parts of sequences using [start:stop:step].
+What is a memory leak in Python?
+A memory leak occurs when unused objects are never garbage collected due to lingering references.
+What does heapq module do?
+Provides heap queue algorithms for priority queues.
+How to find the most frequent element in a list?
+Use collections.Counter(list).most_common(1).
+What is the difference between float('nan') and None?
+float('nan') is a numeric "not-a-number", None is absence of value.
+How to detect NaN in Python?
+Use math.isnan() or pd.isna() if using pandas.
+How to check if a string is a valid number?
+Use str.isdigit() for integers or try casting with float() in a try block.
+How to remove punctuation from a string?
+Use str.translate() with string.punctuation.
+What does defaultdict do?
+It returns a default value if the key is missing in the dictionary.
+What is a frozen set?
+A frozen set is an immutable version of a set.
+How do you create a read-only property?
+Use @property with no setter method.
+How to find the index of an element in a list?
+Use list.index(element).
+What is the use of getattr()?
+It retrieves an attribute of an object by name.
+How to dynamically import a module?
+Use importlib.import_module().
+What is structural pattern matching?
+It’s a match-case syntax introduced in Python 3.10 for matching object structures.
+What is __call__ in Python?
+It allows an object instance to be called like a function.
+How to pause execution in Python?
+Use time.sleep(seconds).
+How to create an infinite loop?
+Use while True:.
+What is the difference between print() and return?
+print() displays output, return sends data back from a function.
+What is the result of comparing two lists with ==?
+It checks if both lists have the same elements in the same order.
+What is a ternary operator in Python?
+A one-liner conditional: x if condition else y.
+What is the use of the else block with a for loop?
+It runs if the loop completes without a break.
+What are Python's logical operators?
+and, or, and not.
+How to check if a string starts or ends with a substring?
+Use str.startswith() and str.endswith().
+What is os.path.join() used for?
+To build platform-independent file paths.
+What is the difference between open('file') and with open('file')?
+The with version automatically closes the file.
+How to read a file line by line?
+Use a loop: for line in file.
+What is the benefit of generators over lists?
+Generators are memory efficient and lazy-loaded.
+How to filter even numbers from a list?
+Use [x for x in lst if x % 2 == 0].
+What does assert do in Python?
+It checks a condition and raises AssertionError if it fails.
+What is a keyword-only argument?
+An argument that must be passed by name using * in function definitions.
+What is functools.lru_cache() used for?
+It caches the results of function calls to improve performance.
+How to implement interfaces in Python?
+Use abstract base classes with the abc module.
+What is the use of super()?
+To call a method from a parent class.
+How do you inspect an object in Python?
+Use functions like type(), dir(), vars(), or inspect.
+How to detect the Python version at runtime?
+Use sys.version or platform.python_version().
+How to make a class iterable?
+Define __iter__() and optionally __next__().
+How to sort a dictionary by value?
+Use sorted(dict.items(), key=lambda x: x[1]).
+What is a weak reference?
+A reference that doesn’t prevent garbage collection of the object.
+What is the difference between print() and logging?
+print() is basic output, logging provides levels and is better for real apps.
+What is the __all__ list used for in modules?
+It controls what gets imported with from module import *.
+How to time a block of code?
+Use time.perf_counter() before and after the block.
+How to suppress exceptions temporarily?
+Use contextlib.suppress().
+What is the difference between re.match and re.search?
+match() checks only the beginning, search() looks through the whole string.
+How to get a list of files in a directory?
+Use os.listdir() or glob.glob().
+What is a Python wheel?
+A wheel (.whl) is a built distribution format for Python packages.
+What is virtualenv used for?
+It creates isolated Python environments.
+What is PyPI?
+The Python Package Index — the main repository for Python packages.
+What is pip freeze used for?
+It lists all installed packages and versions.
+What is a mock object?
+A fake object used in testing to simulate real behavior.
+What is method overloading in Python?
+Python doesn’t support traditional overloading; use default arguments or *args. 

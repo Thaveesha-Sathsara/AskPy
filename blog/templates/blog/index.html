@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AskPY</title>
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/stylee.css' %}"/>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" 
+    crossorigin="anonymous"></script>   <!--This is uncompressed version of JQuery-->
+    
+</head>
+<body>
+    
+        <h1>AskPy</h1>
+    
+        <!-- Wrap everything in a flex container -->
+        <div class="chat-container">
+    
+            <!-- Scrollable message area -->
+            <div id="chatbox-scroll-wrapper">
+                <div id="chatbot">
+                    <p class="botText"><span>Hi there</span></p>
+                </div>
+            </div>
+    
+            <!-- Pinned message input -->
+            <div id="userInput">
+                <input type="text" id="textInput" name="userMessage" placeholder="Type your message..." />
+                <input type="submit" value="Send" id="buttonInput" />
+            </div>
+    
+        </div>
+    
+
+
+
+    <script>
+
+        // This function is triggered when user sends a message
+        function getUserResponse(){
+            var userText = $('#textInput').val(); //Get text input from 
+            var userHTML = "<p class='userText'>User: <span>" + userText + "</span></p>"; // Format user message
+            $('#textInput').val(""); // Clear input box after message is sent
+
+
+            $('#chatbot').append(userHTML); //Show user message in chat window
+
+
+           // Send message to Django backend and get chatbot response
+            $.get('/blog/getResponse', {userMessage: userText}).done(function(data){
+                var returnedMessage = "<p class='botText'>Chatbot: <span>" + data + "</span></p>" // Format chatbot response
+                $('#chatbot').append(returnedMessage); // Show bot response in chat window
+
+                // Auto-scroll to bottom of chat window after new message
+                $('#chatbox-scroll-wrapper').scrollTop($('#chatbox-scroll-wrapper')[0].scrollHeight);
+            })
+        }
+
+
+        //If user clicks the send button, trigger the message sending function
+        $('#buttonInput').click(function(){
+            getUserResponse();
+        })
+
+
+        $('#textInput').keypress (function (e) {
+            if (e.which == 13) { // 13 is the Enter key
+                getUserResponse();
+         }
+        });
+
+    </script>
+
+
+</body>
+</html>

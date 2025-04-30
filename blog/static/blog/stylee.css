@@ -1,0 +1,97 @@
+/* Reset full page layout */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* 📦 Wraps the whole chat interface */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 85vh; /* Take full screen height */
+}
+
+/* 🧾 Scrollable chat area wrapper */
+#chatbox-scroll-wrapper {
+    flex: 1; /* Take all space above input */
+    overflow-y: auto;
+    padding: 10px;
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+/* 💬 Chatbot container inside scroll */
+#chatbot {
+    padding: 10px;
+}
+
+/* 🧍 User messages */
+.userText {
+    text-align: right;
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 25px;
+    color: rgb(109,111,109);
+}
+
+/* 🤖 Bot messages */
+.botText {
+    font-family: monospace;
+    font-size: 14px;
+    text-align: left;
+    line-height: 25px;
+    color: rgb(109,111,109);
+}
+
+/* 🧾 Sticky user input area */
+#userInput {
+    padding: 20px;
+    width: 70%;
+    margin: 0 auto;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    position: sticky;
+    bottom: 0;
+    text-align: center;
+}
+
+/* 📝 Text input */
+#textInput {
+    border: 3px solid white;
+    border-bottom: 3px solid #afafaf;
+    font-family: monospace;
+    font-size: 14px;
+    width: 60%;
+    padding: 16px;
+    color: rgb(213,67,41);
+}
+
+/* 🚀 Submit button */
+#buttonInput {
+    padding: 5px;
+    font-family: monospace;
+    font-size: 14px;
+    border: 3px solid #5b605c;
+    background-color: rgb(40,48,40);
+    color: white;
+    border-radius: 10px;
+}
+
+/* 🟩 Title */
+h1 {
+    text-align: center;
+    color: rgb(57,72,57);
+}
+
+/* 🖱️ Optional: prettier scrollbar */
+#chatbox-scroll-wrapper::-webkit-scrollbar {
+    width: 6px;
+}
+#chatbox-scroll-wrapper::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 3px;
+}
